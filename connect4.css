@@ -1,0 +1,86 @@
+/* 
+QUESTIONS TO ASK:
+1. How to make the restart button just reset the game, rather than restarting the page.
+2. How to change the span text content based on the player's turn.
+3. How to call it end when the game is over.
+
+
+
+*/
+
+body {
+  text-align: justify;
+}
+#player {
+  text-align: justify;
+}
+
+/* game board table */
+
+#board td {
+  position: relative;
+  width: 50px;
+  height: 50px;
+  border: solid 1px rgb(255, 255, 255);
+  background-color: rgb(45, 128, 236);
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/* pieces are div within game table cells: draw as colored circles */
+
+.piece {
+  margin: 5px;
+  width: 80%;
+  height: 80%;
+  border-radius: 50%;
+  display: inline-block;
+  background-color: white;
+}
+
+.piece.p1 {
+  background-color: red;
+}
+
+.piece.p2 {
+  background-color: black;
+}
+
+/* column-top is table row of clickable areas for each column */
+
+#column-top td {
+  border: dashed 1px lightgray;
+}
+
+#column-top td:hover {
+  background-color: rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+}
+
+h3 {
+  margin: inherit;
+  margin-left: 6rem;
+  text-align: center;
+  background-color: #ff7606;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+
+}
+
+#restart {
+  margin: inherit;
+  margin-left: 8rem;
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
